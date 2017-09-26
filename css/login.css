@@ -1,0 +1,145 @@
+/* CSS Document */
+body, html {
+  height: 100%;
+  background: #eee; }
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0.43rem;
+  font: 0.15rem/0.43rem "";
+  color: #eb1212;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #b2b2b2; }
+  header .header_l {
+    padding-left: 0.16rem;
+    font-size: 0.3rem; }
+    header .header_l a {
+      color: #eb1212; }
+  header .header_c {
+    color: #202020; }
+  header .header_r {
+    padding-right: 0.16rem; }
+
+#log {
+  padding-top: 0.43rem; }
+  #log .top {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    font: 0.12rem/0.43rem "";
+    color: #202020;
+    margin-top: 0.2rem;
+    border-top: 0.01rem solid #e5e5e5;
+    border-bottom: 0.01rem solid #e5e5e5; }
+    #log .top b {
+      color: #5f606d;
+      padding-left: 0.15rem;
+      padding-right: 0.38rem; }
+    #log .top input {
+      border: none; }
+    #log .top input::-webkit-input-placeholder {
+      color: #c7c7cd; }
+  #log .change {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.15rem; }
+    #log .change a {
+      font: 0.12rem/0.37rem "";
+      color: #9f9f9f; }
+  #log .nav {
+    text-align: center;
+    margin-top: 0.25rem; }
+    #log .nav .title {
+      font: 0.15rem/0.35rem "";
+      color: #fff;
+      background: #a6daef;
+      border-radius: 0.16rem;
+      display: block;
+      margin: 0 0.27rem; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box; }
+  footer .head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #f8f8f8;
+    font: 0.12rem/0.35rem "";
+    color: #6d6d79; }
+    footer .head .hide {
+      color: #0aaef3;
+      padding-right: 0.15rem; }
+  footer table {
+    background-color: #fff;
+    text-align: center;
+    width: 100%; }
+    footer table tr {
+      width: 100%;
+      display: flex; }
+      footer table tr td {
+        width: 100%;
+        border-top: 1px solid #eee;
+        border-right: 1px solid #eee; }
+        footer table tr td input {
+          width: 100%;
+          height: 0.59rem;
+          border: none;
+          font: 0.23rem/0.59rem "";
+          color: #5f606d;
+          background: #fff; }
+        footer table tr td #close {
+          background-image: url(../images/close.png);
+          background-position: center center;
+          background-size: 0.24rem 0.165rem;
+          background-repeat: no-repeat; }
+        footer table tr td .te {
+          background-color: #f6f6f6; }
+  footer a {
+    color: #000;
+    width: 20%;
+    text-align: center;
+    position: relative; }
+    footer a i.iconfont {
+      font: 0.22rem/0.22rem "";
+      display: block;
+      padding-top: 0.06rem;
+      color: #666; }
+    footer a img {
+      width: 0.21rem;
+      height: 0.21rem;
+      margin: 0 auto;
+      padding-top: 0.05rem;
+      padding-bottom: 0.025rem; }
+    footer a img.qr {
+      width: 0.435rem;
+      height: 0.435rem;
+      position: absolute;
+      top: -0.135rem;
+      left: 20%;
+      padding-top: 0;
+      padding-bottom: 0; }
+    footer a span {
+      font: 0.1rem/0.205rem ""; }
+    footer a span.te {
+      padding-top: 0.345rem;
+      display: block;
+      font: 0.09rem/0.09rem ""; }
+  footer a:hover {
+    color: #eb1212; }
+    footer a:hover i.iconfont {
+      color: #eb3723; }
+  footer a.act {
+    color: #eb1212; }
+    footer a.act i.iconfont {
+      color: #eb3723; }
+
+/*# sourceMappingURL=login.css.map */
