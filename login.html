@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link href="css/public.css" rel="stylesheet" type="text/css">
+<link href="css/swiper-3.4.2.min.css" rel="stylesheet" type="text/css">
+<link href="css/login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <div class="header_l"><a href="mine.html">×</a></div>
+    <div class="header_c">账户登录</div>
+    <div class="header_r">注册</div>
+</header>
+<section id="log">
+    <div class="top">
+        <div class="top_l">
+            <b>手机号码</b>
+            <span id="phone">152*****111</span>
+        </div>
+        <div></div>
+    </div>
+    <div class="top">
+        <div class="top_l">
+            <b>登录密码</b>
+            <input id="pass" type="password" placeholder="请输入6-8位登录密码"/>
+        </div>
+        <div></div>
+    </div>
+    <section class="change">
+        <a href="#"><span>切换账号</span></a>
+        <a href="#"><span>忘记登录密码</span></a>
+    </section>
+    <div class="nav">
+        <span class="title" onclick="goIndex()">下一步</span>
+    </div>
+</section>
+
+<footer>
+    <div class="head">
+        <span></span>
+        <span class="title">掌上生活专属安全键盘</span>
+        <span class="hide">﹀</span>
+    </div>
+    <table>
+    <tr class="number">
+            <td><input type="button" value="5" id="number5" onclick="numberClick(5)"/></td>
+            <td><input type="button" value="0" id="number0" onclick="numberClick(0)"/></td>
+            <td><input type="button" value="1" id="number1" onclick="numberClick(1)"/></td>
+        </tr>
+        <tr class="number">
+            <td><input type="button" value="8" id="number8" onclick="numberClick(8)"/></td>
+            <td><input type="button" value="2" id="number2" onclick="numberClick(2)"/></td>
+            <td><input type="button" value="4" id="number4" onclick="numberClick(4)"/></td>
+        </tr>
+        <tr class="number">
+            <td><input type="button" value="3" id="number3" onclick="numberClick(3)"/></td>
+            <td><input type="button" value="6" id="number6" onclick="numberClick(6)"/></td>
+            <td><input type="button" value="7" id="number7" onclick="numberClick(7)"/></td>
+        </tr>
+        <tr class="number">
+            <td><input type="button" class="te" value="ABC" /></td>
+            <td><input type="button" value="9" id="number9" onclick="numberClick(9)"/></td>
+            <td><input type="button" class="te" id="close"/></td>
+        </tr>
+    </table>
+</footer>
+</body>
+</html>
+<script src="js/common.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    //密码
+    var pass = $("#pass").val();
+    function numberClick(i){
+        if(pass.length<8){
+            pass+=i;
+            $("#pass").val(pass);
+        }
+    }
+   //减少一个
+
+    $("#close").on("click", function() {
+        var pass = $("#pass").val();
+        var passArr=pass.split("");
+        passArr.pop();
+        if(passArr.length<=0){
+            passArr.length=0;
+        }
+        var passStr=passArr.join("")
+        $("#pass").val(passStr);
+    })
+	function goIndex(){
+		if(pass.length>=6 && pass.length<=8){
+		window.location.href="index.html"
+		}
+	}
+
+    //点击下箭头隐藏
+    $(".hide").click(function(){
+        $("footer").toggle();
+    });
+</script>
